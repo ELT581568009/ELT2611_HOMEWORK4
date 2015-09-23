@@ -1,0 +1,16 @@
+import java.io.*;                            
+public class Triangle    
+{     
+    public static void main(String[] args) throws IOException               
+    {    
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));   
+        System.out.println("Input Triangle Base : ");                       
+        String strBase = in.readLine();                                         
+        System.out.println("Input Triangle Height : ");                  
+        String strHeight = in.readLine();                            
+        double base = Double.parseDouble(strBase);               
+        double height = Double.parseDouble(strHeight);                   
+        double result = 0.5*(base+height);                  
+        System.out.println("The Square Area = "+result);       
+    }
+}
